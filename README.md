@@ -3,19 +3,15 @@
 Can a K-nearest neighbours classifier predict the style of a car from it's make, interior volume, and number of doors?
 This labtask has several parts:
 - Collect the data for 10 cars.
-  The sample must be a *Simple Random Sample*. Write a short explanation why your
-  sample is a simple random sample.
-  One smart idea is to head out to a random carpark on campus, Publix, etc., and sample the cars
-  appropriately.
-  Submit that justification in a file `SimpleRandomSample.pdf`. (0.5%)
-- Put the data in an Excel spreadsheet called `MyCars.csv` with the columns `Make`, `Volume`, `Doors`, and `Style`.
+  The sample must be a *Simple Random Sample*. 
+  Put the data in an Excel spreadsheet called `MyCars.csv` with the columns `Make`, `Volume`, `Doors`, and `Style`.
   The `Make` is something like `Ford`, `Tesla`, `Nissan`, etc.
   The `Volume` is a real number of cubic feet.
   The `Doors` is an integer (count a hatchback as a door).
   The `Style` is one of `Sedan`, `SUV`, `Jeep`, `Pickup`, or `Van`.
   You can get the interior volume of a car by asking an LLM, giving the make and model - something like
   "What is the interior volume of a Nissan Xterra?".
-  Submit `MyCars.csv`. (0.5%)
+  Submit `MyCars.csv`. (1.0%)
 - The TA will combine all the samples into one spreadsheet that everyone can use.
 - Randomly split the data set into a training set of 80% and a testing set of 20%.
   Put the training set in a spreadsheet called `Training.csv` and the testing set in a spreadsheet
@@ -26,6 +22,6 @@ This labtask has several parts:
   Call the Python program `KNNClassifier.py`.
   Create a spreadsheet called `Accuracy.csv` with the columns `K` and `Accuracy`, and record the
   accuracy achieved for each `K`.
-  Report the results for the `K` with the highest accuracyby adding two new columns to  `Testing.csv` called
+  Report the results for the `K` with the highest accuracy by adding two new columns to  `Testing.csv` called
   `Prediction`, and `Confidence` to store the prediction and confidence for each car in the testing set.
   Submit `Training.csv`, `Testing.csv`, `Accuracy.csv`, and `KNNClassifier.py`. (3.0%)
